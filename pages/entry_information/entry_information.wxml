@@ -1,0 +1,19 @@
+<!--pages/entry_information/entry_information.wxml-->
+<view class="itemTop">
+  <view class="itemname">名称</view>
+  <input class="iteminput"  type="text" placeholder="请输入产品名称" value="{{itemdata.name}}" bindinput="inputedit" data-obj="name"/>
+</view>
+<view class="itemTop">
+  <view class="itemname">数量</view>
+  <input class="iteminput"  type="text" placeholder="请输入产品数量" value="{{itemdata.number}}" bindinput="inputedit" data-obj="number"/>
+</view>
+<view class="itemTop">
+  <view class="itemname">单位</view>
+  <input class="iteminput"  type="text" placeholder="请输入产品单位" value="{{itemdata.unit}}" bindinput="inputedit" data-obj="unit"/>
+</view>
+<view class="itemTop">
+  <view class="itemname">价格</view>
+  <input class="iteminput"  type="text" placeholder="请输入产品价格" value="{{itemdata.price}}" bindinput="inputedit" data-obj="price"/>
+</view>
+<van-button round  hairline class="btns" type="info" loading-text="加载中..." size="large" loading="{{loadingType}}" bind:click="btnsNew">提交</van-button>
+

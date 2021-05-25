@@ -1,0 +1,33 @@
+/**index.wxss**/
+page{
+  background-color: #f7f8fa;
+}
+.itemstype{
+  padding: 10px;
+  background: #FFFFFF;
+  display: flex;
+}
+.itemstype .item-text{
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #333;
+  width: 30%;
+  
+}
+.itemstype .item-text {
+overflow: hidden;
+margin-left: 10px;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: PingFangSC-Medium;
+}
+.item-time{
+  font-size: 12px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.line{
+  height: 1px;
+  background-color: #aaaaaa;
+}

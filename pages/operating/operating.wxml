@@ -1,0 +1,4 @@
+<!--pages/operating/operating.wxml-->
+<van-grid column-num="3" gutter="{{ 20 }}">
+  <van-grid-item icon="photo-o" text="{{item.name}}" wx:for="{{ items}}" wx:key="key" data-obj="{{item}}" bindtap="jumpsPage"/>
+</van-grid>

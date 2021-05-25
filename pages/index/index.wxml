@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" readonly shape="round" bindtap="goSearch"/>
+<block wx:for="{{items}}" wx:key="key" >
+  <view bindtap="bindViewTap" data-index="{{item}}">
+    <view class="itemstype">
+      <view class="item-text">编号：{{item.editnumber}}</view>
+      <view class="item-text">价格：{{item.price}}</view>
+    </view>
+    <view class="itemstype">
+      <view class="item-text">数量：{{item.number}}</view>
+      <view class="item-text">单位：{{item.unit}}</view>
+      <view class="item-text" style="color:green">{{item.type}}</view>
+    </view>
+    <view class="itemstype">
+     
+      <view class="item-time">更新时间：{{item.time}}</view>
+    </view>
+
+    <view class="line" />
+  </view>
+
+</block>
